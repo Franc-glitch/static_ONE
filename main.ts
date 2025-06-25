@@ -1,9 +1,9 @@
 let currentSlide = 0;
 const totalSlides = 4;
 
-const slider = document.querySelector('.slider') as HTMLDivElement;
 const nextBtn = document.getElementById('nextBtn') as HTMLButtonElement;
 const prevBtn = document.getElementById('prevBtn') as HTMLButtonElement;
+const slider = document.querySelector('.slider') as HTMLDivElement;
 
 nextBtn.addEventListener('click', () => {
   currentSlide = (currentSlide + 1) % totalSlides;

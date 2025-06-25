@@ -1,0 +1,195 @@
+.taskbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #2e3a59;
+    color: white;
+    font-family: sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .taskbar-header > div:not(.logo) {
+    margin-left: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .taskbar-header > div:not(.logo):hover {
+    background-color: #3f4d72;
+  }
+  
+  .taskbar-button {
+    background-color: #f39c12;       /* Bright orange */
+    color: white;                    /* Text color */
+    padding: 8px 16px;               /* Space inside */
+    border-radius: 5px;              /* Rounded corners */
+    font-weight: bold;              /* Bold text */
+    cursor: pointer;                /* Pointer on hover */
+    transition: background-color 0.3s ease;
+  }
+  
+  .taskbar-button:hover {
+    background-color: #e67e22;      /* Darker orange on hover */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-knownasovan-62693.jpg'); /* Replace with your image path */
+    background-size: cover;                  /* Makes the image cover entire screen */
+    background-repeat: no-repeat;            /* Prevents tiling */
+    background-position: center center;      /* Centers the image */
+    background-attachment: fixed;            /* Optional: keeps image fixed while scrolling */
+    font-family: sans-serif;                 /* Optional: clean font */
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+  }
+  
+  .slider-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    width: 400%; /* 4 slides */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+  }
+  
+  .slider-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    width: 400%; /* 4 slides */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Replace the URLs with your image paths */
+  .firstslide  { background-image: url('pexels-szymon-shields-1503561-30469700.jpg'); }
+  .secondslide { background-image: url('pexels-szymon-shields-1503561-30469700.jpg'); }
+  .thirdslide  { background-image: url('pexels-szymon-shields-1503561-30469700.jpg'); }
+  .fourthslide { background-image: url('pexels-szymon-shields-1503561-30469700.jpg'); }
+  
+  .nav-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  #nextBtn,#prevBtn {
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #ffffffcc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #prevBtn:hover, #nextBtn:hover {
+    background-color: #eee;
+  }
+
+  .slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  .text {
+    flex: 1;
+    color: white;
+    font-weight: bold;
+    padding-right: 40px;
+  }
+  
+  .text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image img {
+    width: 300px;                /* Fixes width */
+    height: auto;                /* Maintains aspect ratio */
+    padding: 10px;               /* Inner space around image */
+    border-radius: 20px;
+    background-color: white;     /* Optional visual pop */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;           /* Ensures it fills space well */
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-content h1 {
+    color: #007BFF; /* Blue header */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .main-content p {
+    max-width: 800px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+  }
+  
